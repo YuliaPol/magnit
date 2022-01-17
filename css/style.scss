@@ -383,4 +383,67 @@ body {
             }
         }
     }
+    .thanks-block {
+        padding-top: 50px;
+        &.red-container {
+            margin: auto;
+            margin-top: 50px;
+            max-width: 340px;
+            height: 340px;
+            background: url(./../img/thanks-bg.jpg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding: 75px;
+            .header {
+                font-style: normal;
+                font-weight: 800;
+                font-size: 30px;
+                line-height: 38px;
+            }
+            .text {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 23px;
+                color: #000000;
+            }
+        }
+        .header {
+            font-family: $fontPage;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 60px;
+            color: #000000;
+            padding-bottom: 25px;
+        }
+        .text {
+            font-family: $fontPage;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 23px;
+            color: #000000;
+        }
+    }
+}
+@media screen and (max-width: 350px) {
+    .page-wrapper {
+        .thanks-block {
+            &.red-container {
+                width: 250px;
+                height: 250px;
+                padding: 50px;
+                .header {
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+                .text {
+                    font-size: 14px;
+                    line-height: 18px;
+                } 
+            }
+        }
+    }
 }

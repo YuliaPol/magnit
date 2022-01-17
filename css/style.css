@@ -522,4 +522,71 @@ body {
   background: rgba(230, 0, 14, 0.4);
   pointer-events: none;
 }
+
+.page-wrapper .thanks-block {
+  padding-top: 50px;
+}
+
+.page-wrapper .thanks-block.red-container {
+  margin: auto;
+  margin-top: 50px;
+  max-width: 340px;
+  height: 340px;
+  background: url(./../img/thanks-bg.jpg);
+  background-position: center;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  padding: 75px;
+}
+
+.page-wrapper .thanks-block.red-container .header {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.page-wrapper .thanks-block.red-container .text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.page-wrapper .thanks-block .header {
+  font-family: "Geometria", Helvetica, Arial;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 60px;
+  color: #000000;
+  padding-bottom: 25px;
+}
+
+.page-wrapper .thanks-block .text {
+  font-family: "Geometria", Helvetica, Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+}
+
+@media screen and (max-width: 350px) {
+  .page-wrapper .thanks-block.red-container {
+    width: 250px;
+    height: 250px;
+    padding: 50px;
+  }
+  .page-wrapper .thanks-block.red-container .header {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .page-wrapper .thanks-block.red-container .text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
