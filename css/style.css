@@ -430,6 +430,73 @@ body {
   color: #C4C4C4;
 }
 
+.page-wrapper .form-wrap .form-group .check-row {
+  position: relative;
+}
+
+.page-wrapper .form-wrap .form-group .check-row input[type=checkbox] {
+  display: none;
+}
+
+.page-wrapper .form-wrap .form-group .check-row input[type=checkbox]:checked ~ label::before {
+  border-color: #E6000E;
+}
+
+.page-wrapper .form-wrap .form-group .check-row input[type=checkbox]:checked ~ label .check {
+  width: 27px;
+}
+
+.page-wrapper .form-wrap .form-group .check-row label {
+  font-family: "Geometria", Helvetica, Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  cursor: pointer;
+}
+
+.page-wrapper .form-wrap .form-group .check-row label::before {
+  content: "";
+  width: 25px;
+  min-width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid #E6000E;
+  margin-right: 15px;
+}
+
+.page-wrapper .form-wrap .form-group .check-row label .check {
+  position: absolute;
+  display: block;
+  height: 25px;
+  top: -2px;
+  left: 6px;
+  width: 0px;
+  -webkit-transition: width 0.3s;
+  -o-transition: width 0.3s;
+  transition: width 0.3s;
+  overflow: hidden;
+  background: url(./../img/check-arrow.svg);
+  background-position: left;
+  -webkit-background-size: 25px auto;
+          background-size: 25px auto;
+  background-repeat: no-repeat;
+}
+
 .page-wrapper .form-wrap .btn-wrap .btn-submit {
   background: #E6000E;
   border-radius: 10px;
@@ -445,5 +512,14 @@ body {
   display: block;
   border: none;
   cursor: pointer;
+  -webkit-transition: background 0.3s ease-in;
+  -o-transition: background 0.3s ease-in;
+  transition: background 0.3s ease-in;
+  pointer-events: all;
+}
+
+.page-wrapper .form-wrap .btn-wrap .btn-submit.inactive {
+  background: rgba(230, 0, 14, 0.4);
+  pointer-events: none;
 }
 /*# sourceMappingURL=style.css.map */

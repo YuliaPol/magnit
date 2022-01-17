@@ -21,10 +21,10 @@
                 данные
             </div>
             <div class="form-wrap">
-                <form action="./contact.html" class="form-valid">
+                <form action="./contact.html" class="form-valid contact-form">
                     <div class="form-group">
                         <div class="input-text">
-                            <input type="text" name="q-1" placeholder="Имя">
+                            <input type="text" name="q-1" placeholder="Имя" data-reqired="reqired" class="name-input">
                         </div>
                         <div class="error-text">
                             Заполните поле
@@ -36,7 +36,7 @@
                                 <input type="text" name="q-2" value="+7">
                             </div>
                             <div class="input-text phone-number">
-                                <input type="tel" name="q-3" placeholder="Мобильный" class="phone-input">
+                                <input type="tel" name="q-3" placeholder="Мобильный" class="phone-input" maxlength="11" data-reqired="reqired">
                             </div>
                         </div>
                         <div class="error-text">
@@ -45,14 +45,25 @@
                     </div>
                     <div class="form-group">
                         <div class="input-text">
-                            <input type="text" name="q-4" placeholder="Email" class="email-input">
+                            <input type="text" name="q-4" placeholder="Email" class="email-input" data-reqired="reqired">
                         </div>
                         <div class="error-text">
                             Заполните поле
                         </div>
                     </div>
+                    <div class="form-group">
+                        <div class="check-row">
+                            <input type="checkbox" name="q-5" id="q-5" data-reqired="reqired">
+                            <label for="q-5">
+                                <div class="check"></div>
+                                <span>
+                                    Я согласен с правилами пользовательського соглашения
+                                </span>
+                            </label>
+                        </div>
+                    </div>
                     <div class="btn-wrap">
-                        <button class="btn-submit">Отправить</button>
+                        <button class="btn-submit inactive">Отправить</button>
                     </div>
                 </form>
             </div>
