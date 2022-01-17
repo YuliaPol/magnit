@@ -76,6 +76,7 @@ body {
   overflow-y: auto;
   padding: 50px 25px;
   font-family: "Geometria", Helvetica, Arial;
+  position: relative;
 }
 
 .page-wrapper .logo {
@@ -95,10 +96,75 @@ body {
   color: #000000;
   padding-top: 50px;
   padding-bottom: 50px;
+  position: relative;
+  z-index: 50;
+}
+
+.page-wrapper .form-wrap {
+  position: relative;
+  z-index: 50;
+}
+
+.page-wrapper .form-wrap .produce-bg {
+  position: absolute;
+  bottom: 0px;
+  right: -25px;
+  width: 100%;
+  height: 450px;
+  background: url(./../img/produce.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  z-index: 1;
+}
+
+.page-wrapper .form-wrap .casa-bg {
+  position: absolute;
+  bottom: 0px;
+  right: -25px;
+  width: 295px;
+  height: 380px;
+  background: url(./../img/casa.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  z-index: 1;
+}
+
+.page-wrapper .form-wrap .fruits-bg {
+  position: absolute;
+  bottom: 0px;
+  right: -25px;
+  width: 100%;
+  height: 445px;
+  background: url(./../img/fruits.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  z-index: 1;
+}
+
+.page-wrapper .form-wrap .shopping-bg {
+  position: absolute;
+  bottom: 50px;
+  right: -25px;
+  width: 397px;
+  height: 336px;
+  background: url(./../img/shooping.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  z-index: 1;
 }
 
 .page-wrapper .form-wrap .form-group {
   padding-bottom: 50px;
+  position: relative;
+  z-index: 50;
 }
 
 .page-wrapper .form-wrap .form-group.has-error .question .name {
@@ -110,10 +176,10 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
@@ -178,6 +244,44 @@ body {
   -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+.page-wrapper .form-wrap .form-group .radio-label {
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.page-wrapper .form-wrap .form-group .radio-label .radio-item input[type=radio] {
+  display: none;
+}
+
+.page-wrapper .form-wrap .form-group .radio-label .radio-item input[type=radio]:checked ~ label {
+  background: #E6000E;
+  color: #FFFFFF;
+}
+
+.page-wrapper .form-wrap .form-group .radio-label .radio-item label {
+  padding: 10px 20px;
+  min-width: 150px;
+  border-radius: 25px;
+  border: 1px solid #E6000E;
+  font-family: #E6000E;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .page-wrapper .form-wrap .form-group .radio-icons input[type=radio] {
@@ -495,6 +599,11 @@ body {
   -webkit-background-size: 25px auto;
           background-size: 25px auto;
   background-repeat: no-repeat;
+}
+
+.page-wrapper .form-wrap .btn-wrap {
+  position: relative;
+  z-index: 50;
 }
 
 .page-wrapper .form-wrap .btn-wrap .btn-submit {
